@@ -39,6 +39,9 @@ footer {
                     margin-top: 8px;
                     a {
                         color: #675f5f;
+                        &:hover {
+                            color: #393838 !important;
+                        }
                     }
                 }
             }
@@ -78,11 +81,16 @@ footer {
             }
             ul {
                 li {
-                    color:#675f5f;
                     margin-right: 10px;
                     letter-spacing: 2px;
                     text-decoration: none;
                     font-size: 26px;
+                    a {
+                        color:#675f5f;
+                        &:hover {
+                            color: #393838 !important;
+                        }
+                    }
                 }
             }
         }
