@@ -1,0 +1,29 @@
+@include mediaLg {
+    header {
+        padding: 0;
+        width: 100%;
+        div#sticky-header {
+            padding: 0;
+            .container-fluid {
+                .row {
+                    div.logo {
+                        margin-right: 2% !important;
+                        img {
+                            width: 180px;
+                            height: 90px;
+                        }
+                    }
+                }
+            }
+            .sign-part {
+                #top-user-sign {
+                    text-align: left;
+                    button.sign-btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

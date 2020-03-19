@@ -1,0 +1,46 @@
+@include mediaSm {
+    header {
+        padding: 0;
+        width: 100%;
+        div#sticky-header {
+            padding: 0;
+            .container-fluid {
+                .row {
+                    div.logo {
+                        margin-right: 2% !important;
+                        img {
+                            width: 180px;
+                            height: 90px;
+                        }
+                    }
+                }
+            }
+            .sign-part {
+                #top-user-sign {
+                    text-align: left;
+                    margin-top: -68px;
+                    button.sign-btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+
+        .search-title {
+            .course-text {
+                h1 {
+                    font-size: 30px !important;
+                    line-height: 55px !important;
+                    span {
+                        font-size: 40px !important;
+                    }
+                }
+            }
+
+            .course-btn {
+                text-align: center;
+            }
+        }
+    }
+}

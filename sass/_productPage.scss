@@ -1,0 +1,307 @@
+
+body {
+    background: #ebebeb;
+}
+
+section {
+    margin-top: 9em;
+
+    .product-header {
+        background: #fff;
+        box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+        border-radius: 3px;
+
+        .top-breadcrumb {
+            background: #fff;
+
+            .my-top-breadcrumb {
+                margin-top: 10px;
+                
+                .top-breadcrumb-item {
+                    display: inline;
+                    a {
+                        color:#383d48;
+                        &:hover {
+                            color: rgb(36, 36, 36);
+                        }
+                    }
+                    // font-size: 18px;
+                }
+                & li+li:before {
+                    padding: 8px;
+                    color: #383d48;
+                    content: "\203A";
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        h2 {
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 34px;
+            color:#383d48;
+        }
+    }
+
+    .product-main{
+
+        .video-description {
+            box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+            border-radius: 3px;
+            .top-btn-description {
+                border-bottom: 1px solid #d7d7d7;
+                button {
+                    outline: none;
+                    box-shadow: none;
+                }
+                button:focus {
+                    border-bottom: 2px solid aqua;
+                }
+                button:nth-child(2)::before {
+                    content: '';
+                    width: 1px;
+                    height: 20px;
+                    background: #d7d7d7;
+                    position: absolute;
+                    right: 50%;
+                }
+            }
+
+            .full-description {
+                p {
+                    line-height: 2.5;
+                }
+            }
+            .course-title {
+                .accordion {
+                    color: #444;
+                    text-align: right;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    border: none;
+                    border-radius: 3px;
+                    outline: none;
+                    transition: 0.4s;
+
+                    &:hover {
+                        background-color:#d1d1d1;
+                    }
+
+                    i.fa {
+                        position: absolute;
+                        left: 11%;
+                    }
+                }
+            }
+
+            .accordion-panel {
+                margin-bottom: 5px;
+                .panel {
+                    display: none;
+                    transition: all .9s ease-in-out;
+                    border-bottom: 1px solid #dfdfdf;
+    
+                }
+                .active {
+                    display: flex !important;
+                   
+                    
+                    
+                }
+            }
+            
+        }
+        
+        
+
+        aside#buy {
+            box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+            border-radius: 3px;
+            .buy-product {
+            
+                .price {
+                    .real-price {
+                        font-size: 1.3em;
+                        font-weight: 500;
+                        color: #3c3b37;
+                    }
+
+                    .off-price {
+                        font-size: 1.2em;
+                        font-weight: 400;
+                        color: #73726c;
+                    }
+                    
+                    .off-percent{
+                        font-size: 1.2em;
+                        font-weight: 400;
+                        color: #73726c;
+                    }
+                }
+            .buy-btn {
+                button {
+                    padding: 10px 0;
+                    
+                    &:nth-child(2) {
+                        background-color: transparent;
+                        border: 1px solid #dcdacb;
+                    }
+                    a {
+                        font-weight: 700;
+                        &:nth-child(2) {
+                            color: #0f7c90;
+                        }
+                    }
+                }
+            }
+        }
+        .include-course {
+            margin-right: 53px;
+            p {
+                font-weight: 700;
+            }
+
+            ul {
+                li {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    i.fa {
+                        padding-left: 8px;
+                    }
+                }
+            }
+            a {
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+        }
+
+        .add-fav {
+            
+            i.fa {
+                font-size: 1.5em;
+                color: #898989;
+                
+                &.fa-heart:hover {
+                    color: rgb(175, 31, 31);
+                    transition: all .3s ease-in-out;
+                }
+                &.fa-share:hover {
+                    color: rgb(52, 116, 158);
+                    transition: all .3s ease-in-out;
+                }
+                &.fa-gift:hover {
+                    color: rgb(175, 31, 156);
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    aside#teacher {
+        box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+        border-radius: 3px;
+        .teacher {
+            .teacher-header {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    -webkit-box-shadow: 3px 3px 19px -6px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 3px 3px 19px -6px rgba(0,0,0,0.75);
+                    box-shadow: 3px 3px 19px -6px rgba(0,0,0,0.75);
+                }
+                p {
+                    font-size: 1.3em;
+                    font-weight: 700;
+                }
+            }
+
+            .teacher-about {
+
+                .about-title {
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    color:  rgba(50, 50, 50, 0.66);
+                    &::before {
+                        content: '';
+                        width: 310px;
+                        height: 1px;
+                        background: rgba(0, 0, 0, 0.1);
+                        position: absolute;
+                        top: 50%;
+                        right: 79px;
+                    }
+                }
+                .about-text {
+                    font-size: 15px;
+                    font-weight: normal;
+                    line-height: 25px;
+                    color: #6f7881;
+                    word-break: break-word;
+                }
+            }
+        }
+        
+    }
+        
+    }        
+}
+
+.similar-product {
+    .my-product {
+        margin-top: 30px;
+        article {
+            border: 1px solid #dfdfdf;
+            padding-bottom: 20px;
+            border-radius: 3px;
+            .img-layer {
+                position: relative;
+                
+                &:hover .hover-description {
+                    opacity: 1;
+                    transition: all .2s linear 0s;
+                }
+                .hover-description {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    background-color: rgba(0,0,0,.8);
+                    opacity: 0;
+                    border-radius: 3px;
+                    
+                    h3 , p ,a {
+                        font-size: 13px;
+                    }
+                    button {
+                        border-radius: 20px;
+                        a {
+                            border-radius: 50px;
+                            font-weight: 900;
+                            padding: 5px 25px;
+                        }
+                    }
+                }
+            }
+            .info {
+                margin-top: 15px;
+            }
+            .info-footer {
+                margin-top: 15px;
+                button {
+                    border-radius: 20px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+        
+
+        
+    }
+}
+

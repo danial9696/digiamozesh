@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiamozesh</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/search.css">    
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+<body style="background-color: #fbfbfc">
+    
+
+<header>
+    
+    <!-- Desktop Menu -->
+    <div id="sticky-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-xl-2 col-md-4 col-lg-2">
+                    <div class="logo">
+                        <img src="./assets/img/logo/logo.png" alt="Digiamozesh" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-xl-8 col-md-3 col-lg-7 d-none d-lg-block">
+                    <div class="main-menu">
+                        <nav>
+                            <ul class="ulMenu" id="navigation">     
+                                <li class="menu-item">
+                                    <a href="index.html" class="menu-link">
+                                        صفحه اصلی
+                                    </a>
+                                </li>
+                
+                                <div class="mega-menu">
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            دوره های حضوری
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="ul-mega-menu">
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">شبکه</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    <li><a href="#">مورد 6</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                            <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                            <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                            <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </div>
+                                
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        ویدئو
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        مقالات آموزشی
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        مشاوره
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        درباره ما
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        کسب و کار
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                
+                <div class=" col-xl-2 col-md-3 col-lg-3 sign-part text-md-center">
+                    <div id="top-user-sign">
+                        <button class="sign-btn" id="sign-in-btn">ورود</button>
+                        <button class="sign-btn" id="sign-up-btn">ثبت نام</button>
+                    </div>
+                </div>
+                
+                </div>
+                
+                
+
+        </div>
+
+
+            <!-- Mobile Menu -->
+        <div class="mobile-menu d-block d-lg-none">
+            <span id="collapseBtn"><i class="fa fa-bars fa-2x"></i></span>
+        
+            <div class="slick-menu">
+                
+                <ul class="ulMobile text-center">     
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            صفحه اصلی
+                        </a>
+                    </li>
+    
+                    
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                دوره های حضوری
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="mega-menu">
+                            <ul class="ul-mega-menu text-center">
+                                <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    
+                    
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            ویدئو
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            مقالات آموزشی
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            مشاوره
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            درباره ما
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            کسب و کار
+                        </a>
+                    </li>
+                </ul>
+        
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Search Box & Big Title -->
+    <div class="search-title">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 course-text text-center">
+                    <h1>دوره های محبوب خود را <br> به کمک <span>دیجی آموزش</span><br> فرا گیرید</h1>
+                    
+                </div>
+
+                <div class="col-md-4 course-btn text-sm-center text-md-right">
+                    <button class="btn btn-info btn-lg"><a href="product.html" style="color: #Fff;">مشاهده دوره ها</a></button>
+                </div>
+
+                <!-- Search Box -->
+                <div class="col-12 s003">
+                    <form>
+                        <div class="inner-form">
+                            <div class="input-field third-wrap">
+                                <button class="btn-search" type="button">
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </div>
+                          
+                          <div class="input-field second-wrap">
+                            <input id="search" type="text" placeholder="جست و جو" />
+                          </div>
+
+                          <div class="input-field first-wrap">
+                            <div class="input-select">
+                              <select data-trigger = "" name="choices-single-defaul">
+                                <option placeholder = "" >دسته بندی</option>
+                                <option>برنامه نویسی</option>
+                                <option>شبکه</option>
+                                <option>امنیت</option>
+                                <option>سیستم های عامل</option>
+                                <option>مجازی سازی</option>
+                                <option>لینوکس</option>
+                                <option>سیسکو</option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>    
+
+<!-- Show all Product -->
+<main id="main-page-product">
+    <div class="show-product">
+        <div class="container">
+            <div class="show-title">
+                <h2>جدید ترین دوره ها</h2>
+                <a href="#">مشاهده دوره ها</a>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/1.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm"><a href="product.html" class="text-white">رایگان</a></button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+                        
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/1.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/2.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+                        
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/3.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/4.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/5.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/6.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/3.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/5.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/4.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/1.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-product">
+                    <article>
+
+                        <div class="img-layer">
+                            <div class="hover-description text-center">
+                                <h3 class="text-white mt-4">منبع دوره: Github</h3>
+                                <p class="text-white  mt-3">استاد دوره: آقای یارو</p>
+                                <button class="btn btn-info btn-sm mt-4 mt-lg-5"><a href="product.html" class="text-white">مشاهده جزئیات</a></button>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/img/product/1.png" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h2 class="text-center">دوره ی آموزشی فلان</h2>
+                        </div>
+
+                        <div class="info-footer d-flex justify-content-between align-items-center px-3">
+                            <span class="time">
+                                <i class="fa fa-calendar-minus-o"></i>
+                                زمان
+                            </span>
+                            <button class="btn btn-info btn-sm">رایگان</button>
+                        </div>
+
+                    </article>
+                    
+                </div>
+
+
+                
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<div class="counter mt-5">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <div class="counter-wrap d-flex flex-column mt-3">
+                    <div class="icon-box"><i class="fa fa-suitcase"></i></div>
+                    
+                    <span class="text-white mt-3 my-counter counting" data-count="199">0</span>
+                    <p class="text-white mt-3">پروژه های انجام شده</p>
+
+                </div>
+                
+            </div>
+
+            <div class="col-md-4">
+                <div class="counter-wrap d-flex flex-column mt-3">
+                    <div class="icon-box"><i class="fa fa-trophy"></i></div>
+                    
+                    <span class="text-white mt-3 counting" data-count="458">0</span>
+                    <p class="text-white mt-3">تعداد دوره ها</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="counter-wrap d-flex flex-column mt-3">
+                    <div class="icon-box"><i class="fa fa-user"></i></div>
+                    
+                    <span class="text-white mt-3 counting" data-count="1689">0</span>
+                    <p class="text-white mt-3">تعداد دانشجویان</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="mt-5">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="address">
+                        <span>دیجی آموزش</span>
+                        <p>میدان ونک، خیابان ملاصدرا،<br> نرسیده به پل کردستان،<br> پلاک 52</p>
+                        <p>021-88888888</p>
+                        <p>Digiamozesh@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="links">
+                        <span>لینک ها</span>
+                        <ul class="d-flex flex-column">
+                            <li><a href="#">خانه</a></li>
+                            <li><a href="#">ارتباط با ما</a></li>
+                            <li><a href="#">درباره ما</a></li>
+                            <li><a href="#">آکادمی</a></li>
+                            <li><a href="#">محصولات</a></li>
+                            <li><a href="#">وبلاگ</a></li>
+                            <li><a href="#">گالری</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-sign">
+                        <span>ثبت نام</span>
+                        <form id="search-form" class="form-search d-flex">
+                            <input type="text" class="input-search" placeholder="ایمیل">
+                            <button type="submit" class="btn btn-success mr-2">ثبت نام</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-social">
+                        <span>شبکه های اجتماعی</span>
+                        <ul class="d-flex">
+                            <a href="#"><li class="fa fa-instagram"></li></a>
+                            <a href="#"><li class="fa fa-telegram"></li></a>
+                            <a href="#"><li class="fa fa-google-plus"></li></a>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+    
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Carousel -->
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- For Search Box -->
+    <script src="./js/extention/choices.js"></script>
+    <script>
+        // For Search Box
+    const choices = new Choices('[data-trigger]',
+    {
+      searchEnabled: false,
+      itemSelectText: '',
+    });
+    </script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

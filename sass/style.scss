@@ -1,0 +1,37 @@
+@import "reset";
+@import "config";
+@import "header";
+@import "product";
+@import "productPage";
+@import "counter";
+@import "swiper";
+@import "footer";
+@import "mobile";
+@import "tablet-SmLaptop";
+@import "desktop-Laptop";
+@import "widescreen";
+
+
+* {
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+    font-family: bYekan;
+    // font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+// Font 
+@font-face {
+    font-family: bYekan;
+    src: url('../css/font/3.woff');
+  }
+
+
+
+

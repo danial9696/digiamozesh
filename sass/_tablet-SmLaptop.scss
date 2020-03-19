@@ -1,0 +1,70 @@
+@include mediaMd {
+    header {
+        padding: 0;
+        width: 100%;
+        div#sticky-header {
+            padding: 0;
+            .container-fluid {
+                .row {
+                    div.logo {
+                        margin-right: 2% !important;
+                        img {
+                            width: 180px;
+                            height: 90px;
+                        }
+                    }
+                }
+            }
+            .sign-part {
+                #top-user-sign {
+                    text-align: center;
+                    margin-right: 7%;
+                    margin-top: -68px;
+                    button.sign-btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+
+        .search-title {
+            .course-text {
+                h1 {
+                    font-size: 40px;
+                    line-height: 70px;
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .course-btn {
+                text-align: center;
+            }
+        }
+
+        .s003 {
+            .choices__item.choices__item--selectable.choices__placeholder {
+                flex-direction: row-reverse;
+            }
+            .choices__item.choices__item--selectable.choices__placeholder[data-value="دسته بندی"] {
+                margin-right: 12px;
+            }
+            .first-wrap{
+                order: 1 !important;
+            }
+            .second-wrap{
+                order: 2 !important;
+            }
+            .third-wrap{
+                order: 3 !important;
+            }
+        }
+    }
+
+    .counter {
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
