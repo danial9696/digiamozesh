@@ -131,8 +131,9 @@ header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item .ul-mega-menu
   position: absolute;
   right: 0;
   left: 0;
-  border-radius: 3px;
+  border-radius: 1px;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item .ul-mega-menu .mega-menu-item a {
   transition: all 0.3s ease-in;
@@ -140,6 +141,9 @@ header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item .ul-mega-menu
 }
 header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item .ul-mega-menu .mega-menu-item a:hover {
   color: aqua !important;
+}
+header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item .ul-mega-menu .mega-menu-item ul {
+  text-align: center;
 }
 header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item .ul-mega-menu .mega-menu-item ul li {
   margin-top: 20px;
@@ -160,15 +164,20 @@ header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item:hover .ul-meg
   right: -23%;
   left: -23%;
   height: auto;
-  background: #81b2b5;
+  background: #1d464c;
+  opacity: 0.9;
   padding: 0 10px;
   transition: all 0.3s ease-in-out;
 }
 header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item:hover .ul-mega-menu .mega-menu-item {
   margin-top: 10px;
+  width: 150px;
 }
 header #sticky-header .main-menu nav .ulMenu .mega-menu .menu-item:hover .ul-mega-menu .mega-menu-item .mega-link {
   color: #fff;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 5px;
 }
 header #sticky-header #top-user-sign .sign-btn {
   color: #4b4a4a;
@@ -219,24 +228,37 @@ header #sticky-header .mobile-menu .slick-menu {
 }
 header #sticky-header .mobile-menu .slick-menu .ulMobile {
   background: #ededed;
-  margin: 4px 50px;
-  border-radius: 3px;
+  text-align: right;
+  margin: 2px 0;
+  border-radius: 1px;
   -webkit-box-shadow: 3px 3px 18px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 18px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 18px -3px rgba(0, 0, 0, 0.75);
 }
 header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item {
   padding: 15px 25px;
+  position: relative;
+}
+header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item i.fa {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background: #fff;
+  font-size: 1.5em;
+}
+header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item .mega-menu {
+  display: none;
+}
+header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item .mega-menu .ul-mega-menu {
+  text-align: center;
+}
+header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item .mega-menu .ul-mega-menu li {
+  margin-top: 15px;
+  font-size: 1.2em;
 }
 header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item:hover {
   background: #c9d3e6;
-}
-header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item .ul-mega-menu {
-  margin-top: 20px;
-}
-header #sticky-header .mobile-menu .slick-menu .ulMobile .menu-item .ul-mega-menu .mega-menu-item {
-  padding: 15px;
-  font-size: 18px;
 }
 header #sticky-header .mobile-menu .slick-menu .ulMobile .mega-menu .menu-item .ul-mega-menu {
   display: none;
@@ -273,6 +295,116 @@ header .search-title .s003 {
 }
 header .search-title .s003 .input-select {
   margin-top: 12px;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.register {
+  display: none;
+  background: #fff;
+  z-index: 1000;
+  width: 30%;
+  height: auto;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  margin: 0 auto;
+  right: 25%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+}
+.register .register-popup h1 {
+  margin: 20px;
+  font-size: 2em;
+  font-weight: 900;
+}
+.register .register-popup label {
+  margin: 10px 20px 0 20px;
+}
+.register .register-popup input {
+  margin: 5px 20px;
+  padding: 10px 20px;
+  border-radius: 1px;
+  border: 1px solid #1c8e8e;
+}
+.register .register-popup button[type=submit] {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 150px;
+  outline: none;
+}
+.register .register-popup button .fa-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.login {
+  display: none;
+  background: #fff;
+  z-index: 1000;
+  width: 30%;
+  height: auto;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  margin: 0 auto;
+  right: 25%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+}
+.login .login-popup h1 {
+  margin: 20px;
+  font-size: 2em;
+  font-weight: 900;
+}
+.login .login-popup label {
+  margin: 10px 20px 0 20px;
+}
+.login .login-popup input {
+  margin: 5px 20px;
+  padding: 10px 20px;
+  border-radius: 1px;
+  border: 1px solid #1c8e8e;
+}
+.login .login-popup button[type=submit] {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 150px;
+  outline: none;
+}
+.login .login-popup button .fa-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.login .login-detail {
+  margin: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.login .login-detail label {
+  margin: 0;
+  color: #ccc;
+  font-size: 14px;
+}
+.login .login-detail input[type=checkbox] {
+  margin: 0;
+  background: #ccc;
+  border: none;
 }
 
 main#main-page-product {
@@ -373,56 +505,56 @@ body {
   background: #ebebeb;
 }
 
-section {
+section.product-page {
   margin-top: 9em;
 }
-section .product-header {
+section.product-page .product-header {
   background: #fff;
   box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
   border-radius: 3px;
 }
-section .product-header .top-breadcrumb {
+section.product-page .product-header .top-breadcrumb {
   background: #fff;
 }
-section .product-header .top-breadcrumb .my-top-breadcrumb {
+section.product-page .product-header .top-breadcrumb .my-top-breadcrumb {
   margin-top: 10px;
 }
-section .product-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item {
+section.product-page .product-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item {
   display: inline;
 }
-section .product-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item a {
+section.product-page .product-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item a {
   color: #383d48;
 }
-section .product-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item a:hover {
+section.product-page .product-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item a:hover {
   color: #242424;
 }
-section .product-header .top-breadcrumb .my-top-breadcrumb li + li:before {
+section.product-page .product-header .top-breadcrumb .my-top-breadcrumb li + li:before {
   padding: 8px;
   color: #383d48;
   content: "›";
   font-size: 20px;
 }
-section .product-header h2 {
+section.product-page .product-header h2 {
   font-size: 23px;
   font-weight: 600;
   line-height: 34px;
   color: #383d48;
 }
-section .product-main .video-description {
+section.product-page .product-main .video-description {
   box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
   border-radius: 3px;
 }
-section .product-main .video-description .top-btn-description {
+section.product-page .product-main .video-description .top-btn-description {
   border-bottom: 1px solid #d7d7d7;
 }
-section .product-main .video-description .top-btn-description button {
+section.product-page .product-main .video-description .top-btn-description button {
   outline: none;
   box-shadow: none;
 }
-section .product-main .video-description .top-btn-description button:focus {
+section.product-page .product-main .video-description .top-btn-description button:focus {
   border-bottom: 2px solid aqua;
 }
-section .product-main .video-description .top-btn-description button:nth-child(2)::before {
+section.product-page .product-main .video-description .top-btn-description button:nth-child(2)::before {
   content: "";
   width: 1px;
   height: 20px;
@@ -430,10 +562,10 @@ section .product-main .video-description .top-btn-description button:nth-child(2
   position: absolute;
   right: 50%;
 }
-section .product-main .video-description .full-description p {
+section.product-page .product-main .video-description .full-description p {
   line-height: 2.5;
 }
-section .product-main .video-description .course-title .accordion {
+section.product-page .product-main .video-description .course-title .accordion {
   color: #444;
   text-align: right;
   cursor: pointer;
@@ -444,112 +576,112 @@ section .product-main .video-description .course-title .accordion {
   outline: none;
   transition: 0.4s;
 }
-section .product-main .video-description .course-title .accordion:hover {
+section.product-page .product-main .video-description .course-title .accordion:hover {
   background-color: #d1d1d1;
 }
-section .product-main .video-description .course-title .accordion i.fa {
+section.product-page .product-main .video-description .course-title .accordion i.fa {
   position: absolute;
   left: 11%;
 }
-section .product-main .video-description .accordion-panel {
+section.product-page .product-main .video-description .accordion-panel {
   margin-bottom: 5px;
 }
-section .product-main .video-description .accordion-panel .panel {
+section.product-page .product-main .video-description .accordion-panel .panel {
   display: none;
   transition: all 0.9s ease-in-out;
   border-bottom: 1px solid #dfdfdf;
 }
-section .product-main .video-description .accordion-panel .active {
+section.product-page .product-main .video-description .accordion-panel .active {
   display: flex !important;
 }
-section .product-main aside#buy {
+section.product-page .product-main aside#buy {
   box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
   border-radius: 3px;
 }
-section .product-main aside#buy .buy-product .price .real-price {
+section.product-page .product-main aside#buy .buy-product .price .real-price {
   font-size: 1.3em;
   font-weight: 500;
   color: #3c3b37;
 }
-section .product-main aside#buy .buy-product .price .off-price {
+section.product-page .product-main aside#buy .buy-product .price .off-price {
   font-size: 1.2em;
   font-weight: 400;
   color: #73726c;
 }
-section .product-main aside#buy .buy-product .price .off-percent {
+section.product-page .product-main aside#buy .buy-product .price .off-percent {
   font-size: 1.2em;
   font-weight: 400;
   color: #73726c;
 }
-section .product-main aside#buy .buy-product .buy-btn button {
+section.product-page .product-main aside#buy .buy-product .buy-btn button {
   padding: 10px 0;
 }
-section .product-main aside#buy .buy-product .buy-btn button:nth-child(2) {
+section.product-page .product-main aside#buy .buy-product .buy-btn button:nth-child(2) {
   background-color: transparent;
   border: 1px solid #dcdacb;
 }
-section .product-main aside#buy .buy-product .buy-btn button a {
+section.product-page .product-main aside#buy .buy-product .buy-btn button a {
   font-weight: 700;
 }
-section .product-main aside#buy .buy-product .buy-btn button a:nth-child(2) {
+section.product-page .product-main aside#buy .buy-product .buy-btn button a:nth-child(2) {
   color: #0f7c90;
 }
-section .product-main aside#buy .include-course {
+section.product-page .product-main aside#buy .include-course {
   margin-right: 53px;
 }
-section .product-main aside#buy .include-course p {
+section.product-page .product-main aside#buy .include-course p {
   font-weight: 700;
 }
-section .product-main aside#buy .include-course ul li {
+section.product-page .product-main aside#buy .include-course ul li {
   margin-top: 10px;
   font-weight: 400;
 }
-section .product-main aside#buy .include-course ul li i.fa {
+section.product-page .product-main aside#buy .include-course ul li i.fa {
   padding-left: 8px;
 }
-section .product-main aside#buy .include-course a {
+section.product-page .product-main aside#buy .include-course a {
   font-weight: 700;
   font-size: 1.2em;
 }
-section .product-main aside#buy .add-fav i.fa {
+section.product-page .product-main aside#buy .add-fav i.fa {
   font-size: 1.5em;
   color: #898989;
 }
-section .product-main aside#buy .add-fav i.fa.fa-heart:hover {
+section.product-page .product-main aside#buy .add-fav i.fa.fa-heart:hover {
   color: #af1f1f;
   transition: all 0.3s ease-in-out;
 }
-section .product-main aside#buy .add-fav i.fa.fa-share:hover {
+section.product-page .product-main aside#buy .add-fav i.fa.fa-share:hover {
   color: #34749e;
   transition: all 0.3s ease-in-out;
 }
-section .product-main aside#buy .add-fav i.fa.fa-gift:hover {
+section.product-page .product-main aside#buy .add-fav i.fa.fa-gift:hover {
   color: #af1f9c;
   transition: all 0.3s ease-in-out;
 }
-section .product-main aside#teacher {
+section.product-page .product-main aside#teacher {
   box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
   border-radius: 3px;
 }
-section .product-main aside#teacher .teacher .teacher-header img {
+section.product-page .product-main aside#teacher .teacher .teacher-header img {
   width: 120px;
   height: 120px;
   -webkit-box-shadow: 3px 3px 19px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 19px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 19px -6px rgba(0, 0, 0, 0.75);
 }
-section .product-main aside#teacher .teacher .teacher-header p {
+section.product-page .product-main aside#teacher .teacher .teacher-header p {
   font-size: 1.3em;
   font-weight: 700;
 }
-section .product-main aside#teacher .teacher .teacher-about .about-title {
+section.product-page .product-main aside#teacher .teacher .teacher-about .about-title {
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   font-size: 14px;
   border-radius: 3px;
   color: rgba(50, 50, 50, 0.66);
 }
-section .product-main aside#teacher .teacher .teacher-about .about-title::before {
+section.product-page .product-main aside#teacher .teacher .teacher-about .about-title::before {
   content: "";
   width: 310px;
   height: 1px;
@@ -558,7 +690,7 @@ section .product-main aside#teacher .teacher .teacher-about .about-title::before
   top: 50%;
   right: 79px;
 }
-section .product-main aside#teacher .teacher .teacher-about .about-text {
+section.product-page .product-main aside#teacher .teacher .teacher-about .about-text {
   font-size: 15px;
   font-weight: normal;
   line-height: 25px;
@@ -611,6 +743,281 @@ section .product-main aside#teacher .teacher .teacher-about .about-text {
 .similar-product .my-product article .info-footer button {
   border-radius: 20px;
   padding: 5px 15px;
+}
+
+section.blog-page {
+  margin-top: 9em;
+}
+section.blog-page .blog-header {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+  border-radius: 3px;
+}
+section.blog-page .blog-header .top-breadcrumb {
+  background: #fff;
+}
+section.blog-page .blog-header .top-breadcrumb .my-top-breadcrumb {
+  margin-top: 10px;
+}
+section.blog-page .blog-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item {
+  display: inline;
+}
+section.blog-page .blog-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item a {
+  color: #383d48;
+}
+section.blog-page .blog-header .top-breadcrumb .my-top-breadcrumb .top-breadcrumb-item a:hover {
+  color: #242424;
+}
+section.blog-page .blog-header .top-breadcrumb .my-top-breadcrumb li + li:before {
+  padding: 8px;
+  color: #383d48;
+  content: "›";
+  font-size: 20px;
+}
+section.blog-page .blog-header h2 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #383d48;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker {
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 70%;
+  height: auto;
+  padding-right: 10%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .top-sticker {
+  font-size: 15px;
+  background: #F8B147;
+  color: #151515;
+  padding: 4px 5px;
+  position: absolute;
+  top: -10px;
+  right: 19%;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .single-title {
+  margin-top: 15px;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .single-title h1 {
+  font-size: 4vw;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .profile-info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .profile-info a {
+  margin-left: 15px;
+  font-weight: 700;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .profile-info a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .profile-info .authore::after {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background: #fff;
+  display: inline-block;
+  margin-right: 15px;
+}
+section.blog-page .blog-main-img .blog-img .img-sticker .img-sticker-inn .profile-info span {
+  color: white;
+}
+section.blog-page .blog-description .blog-main-text p {
+  font-size: 22px;
+  line-height: 1.5em;
+  margin-top: 30px;
+}
+section.blog-page .blog-description .blog-main-text h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-top: 60px;
+}
+section.blog-page .blog-description .share-blog {
+  display: flex;
+  flex-direction: column;
+}
+section.blog-page .blog-description .share-blog span i.fa:nth-child(-n+2) {
+  color: #7a7676;
+}
+
+.teacher-intro {
+  margin-top: 10%;
+}
+.teacher-intro h2 {
+  text-align: center;
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+.teacher-intro .teacher-wrapper .top-btn-description {
+  background: #373B44;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4286f4, #373B44);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.teacher-intro .teacher-wrapper .top-btn-description button {
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+}
+.teacher-intro .teacher-wrapper .top-btn-description button:focus {
+  font-size: 1.5em;
+  color: #222e6c;
+}
+.teacher-intro .teacher-wrapper .full-description .teacher-description {
+  position: relative;
+}
+.teacher-intro .teacher-wrapper .full-description .teacher-description img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 19px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 19px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 19px -6px rgba(0, 0, 0, 0.75);
+  display: block;
+  margin: 0 auto;
+}
+.teacher-intro .teacher-wrapper .full-description .teacher-description h3 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: 500;
+}
+.teacher-intro .teacher-wrapper .full-description .teacher-description p {
+  padding: 0 50px;
+  font-size: 1em;
+  line-height: 1.7em;
+  text-align: justify;
+}
+.teacher-intro .teacher-wrapper .full-description .teacher-description:not(:last-child)::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background: #ccc;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  right: 25%;
+}
+.teacher-intro .teacher-wrapper .full-description.network-teacher-inn {
+  display: none;
+}
+
+.teacher-join {
+  background: #ccc url("../assets/img/teacher-join.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+}
+.teacher-join h1 {
+  color: #fff;
+  padding-top: 4%;
+  font-size: 2.5em;
+  font-size: 700;
+  font-weight: 900;
+}
+.teacher-join p {
+  color: #fff;
+  padding: 0 100px;
+  font-size: 1.2em;
+  line-height: 1.9em;
+  margin-top: 10%;
+}
+
+.teacher-join-btn h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.teacher-join-btn h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.about-us {
+  margin-top: 30vh;
+}
+.about-us .our-goal {
+  text-align: center;
+}
+.about-us .our-goal h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.about-us .our-goal h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.about-us .our-about {
+  text-align: center;
+  margin-top: 2em;
+}
+.about-us .our-about h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+.about-us .our-about p {
+  padding: 1em 0;
+  line-height: 1.5em;
+}
+.about-us .founders {
+  text-align: center;
+  margin-top: 3em;
+}
+.about-us .founders h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.about-us .founders .founders-intro img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+.about-us .founders .founders-intro h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 1em;
+}
+.about-us .founders .founders-intro h4 {
+  font-size: 1em;
+  color: #666565;
+  margin-top: 0.8em;
+}
+.about-us .founders .founders-intro p {
+  padding: 1em 4em;
+  line-height: 1.5em;
+}
+.about-us .we-do {
+  margin-top: 2em;
+  padding: 2em 3em;
+  background: #2B001D;
+  color: #fff;
+}
+.about-us .we-do h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.about-us .we-do .we-do-inn {
+  line-height: 2em;
+  padding-top: 2em;
+}
+.about-us .we-do .we-do-inn p {
+  margin-top: 1em;
 }
 
 .counter {
@@ -1004,6 +1411,10 @@ body {
   text-align: right;
   overflow-x: hidden;
   font-family: bYekan;
+}
+
+a {
+  display: inline-block;
 }
 
 @font-face {

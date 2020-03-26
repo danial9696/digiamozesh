@@ -1,0 +1,131 @@
+#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.register {
+    display: none;
+    background: #fff;
+    z-index: 1000;
+    width: 30%;
+    height: auto;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    margin: 0 auto;
+    right: 25%;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+    .register-popup {
+        h1 {
+            margin: 20px;
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        label {
+            margin: 10px 20px 0 20px;
+        }
+
+        input {
+            margin: 5px 20px;
+            padding: 10px 20px;
+            border-radius: 1px;
+            border: 1px solid #1c8e8e;
+        }
+
+        button[type="submit"] {
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+            width: 150px;
+            outline: none;
+        }
+
+        button {
+            .fa-close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            
+        }
+    }
+}
+
+.login {
+    display: none;
+    background: #fff;
+    z-index: 1000;
+    width: 30%;
+    height: auto;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    margin: 0 auto;
+    right: 25%;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(25, 25, 25, 0.2);
+    .login-popup {
+        h1 {
+            margin: 20px;
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        label {
+            margin: 10px 20px 0 20px;
+        }
+
+        input {
+            margin: 5px 20px;
+            padding: 10px 20px;
+            border-radius: 1px;
+            border: 1px solid #1c8e8e;
+        }
+
+        button[type="submit"] {
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+            width: 150px;
+            outline: none;
+        }
+
+        button {
+            .fa-close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            
+        }
+    }
+    
+    .login-detail {
+        margin: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        a {
+
+        }
+        label {
+            margin: 0;
+            color: #ccc;
+            font-size: 14px;
+        }
+        input[type="checkbox"] {
+            margin: 0;
+            background: #ccc;
+            border: none;
+        }
+    }
+}

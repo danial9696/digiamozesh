@@ -7,29 +7,28 @@
 
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/search.css">    
     <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body style="background-color: #fbfbfc">
     
 
+
+
 <header>
     
-    <!-- Desktop Menu -->
+    <!-- Desktop & Mobile Menu -->
     <div id="sticky-header">
         <div class="container-fluid">
             <div class="row align-items-center">
 
-                <div class="col-xl-2 col-md-4 col-lg-2">
+                <div class="col-md-4 col-lg-2">
                     <div class="logo">
                         <img src="./assets/img/logo/logo.png" alt="Digiamozesh" class="img-fluid">
                     </div>
                 </div>
 
-                <div class="col-xl-8 col-md-3 col-lg-7 d-none d-lg-block">
+                <div class="col-md-6 col-lg-7 d-none d-lg-block">
                     <div class="main-menu">
                         <nav>
                             <ul class="ulMenu" id="navigation">     
@@ -58,10 +57,51 @@
                                                     
                                                 </ul>
                                             </li>
-                                            <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
-                                            <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
-                                            <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
-                                            <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">امنیت</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    <li><a href="#">مورد 6</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">سیستم های عامل</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">مجازی سازی</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">برنامه نویسی</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    <li><a href="#">مورد 6</a></li>
+                                                    
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     
@@ -75,7 +115,7 @@
                                 </li>
                 
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="blog.html" class="menu-link">
                                         مقالات آموزشی
                                     </a>
                                 </li>
@@ -103,7 +143,7 @@
                     
                 </div>
                 
-                <div class=" col-xl-2 col-md-3 col-lg-3 sign-part text-md-center">
+                <div class="col-md-2 col-lg-3 sign-part text-md-center">
                     <div id="top-user-sign">
                         <button class="sign-btn" id="sign-in-btn">ورود</button>
                         <button class="sign-btn" id="sign-up-btn">ثبت نام</button>
@@ -112,8 +152,6 @@
                 
                 </div>
                 
-                
-
         </div>
 
 
@@ -123,21 +161,20 @@
         
             <div class="slick-menu">
                 
-                <ul class="ulMobile text-center">     
+                <ul class="ulMobile">     
                     <li class="menu-item">
                         <a href="#" class="menu-link">
                             صفحه اصلی
                         </a>
+
                     </li>
-    
-                    
-                        <li class="menu-item">
+                    <li class="menu-item">
                             <a href="#" class="menu-link">
                                 دوره های حضوری
-                                <i class="fa fa-angle-down"></i>
                             </a>
+                            <i class="fa fa-angle-down mobile-mega-menu"></i>
                             <div class="mega-menu">
-                            <ul class="ul-mega-menu text-center">
+                            <ul class="ul-mega-menu">
                                 <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
                                 <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
                                 <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
@@ -145,7 +182,7 @@
                                 <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
                             </ul>
                         </div>
-                        </li>
+                    </li>
                     
                     
     
@@ -153,10 +190,20 @@
                         <a href="#" class="menu-link">
                             ویدئو
                         </a>
+                        <i class="fa fa-angle-down mobile-mega-menu"></i>
+                            <div class="mega-menu">
+                            <ul class="ul-mega-menu">
+                                <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                            </ul>
+                        </div>
                     </li>
     
                     <li class="menu-item">
-                        <a href="#" class="menu-link">
+                        <a href="blog.html" class="menu-link">
                             مقالات آموزشی
                         </a>
                     </li>
@@ -234,7 +281,60 @@
         </div>
     </div>
 
-</header>    
+</header>  
+
+<!-- Register Popup -->
+<div class="register" id="registerPopup">
+    <form action="" class="register-popup d-flex flex-column">
+        <h1 class="text-center">ثبت نام</h1>
+    
+        <label for="email"><b>ایمیل:</b></label>
+        <input type="email" placeholder="" name="email">
+    
+        <label for="mobile-num"><b>شماره همراه:</b></label>
+        <input type="tel" placeholder="" name="mobile-num">
+
+        <label for="psw"><b>رمز عبور:</b></label>
+        <input type="password" placeholder="" name="psw">
+
+        <label for="psw"><b>تایید رمز عبور:</b></label>
+        <input type="password" placeholder="" name="psw">
+    
+        <button type="submit" class="btn btn-info">ثبت نام</button>
+        <button type="submit" class="btn btn-danger">ثبت نام با اکانت گوگل</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-close" id="close"></i></button>
+    </form>
+</div>
+
+<!-- Login Popup -->
+<div class="login" id="loginPopup">
+    <form action="" class="login-popup d-flex flex-column">
+        <h1 class="text-center">ورود</h1>
+    
+        <label for="email"><b>ایمیل:</b></label>
+        <input type="email" placeholder="" name="email">
+    
+        <label for="psw"><b>رمز عبور:</b></label>
+        <input type="password" placeholder="" name="psw">
+
+        <div class="login-detail">
+            <a href="#" class="text-danger">فراموشی رمز عبور</a>
+            <div class="">
+                <label for="remember">مرا به خاطر بسپار</label>
+                <input type="checkbox" value="remember" name="remember" checked>
+            </div>
+            
+        </div>
+    
+        <button type="submit" class="btn btn-success">ورود</button>
+        <button type="submit" class="btn btn-danger">ورود با اکانت گوگل</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-close" id="close"></i></button>
+        
+    </form>
+</div>
+
+<!-- OverLay For PopUp -->
+<div id="overlay"></div> 
 
 <!-- Show all Product -->
 <main id="main-page-product">
@@ -663,12 +763,13 @@
                     <div class="links">
                         <span>لینک ها</span>
                         <ul class="d-flex flex-column">
-                            <li><a href="#">خانه</a></li>
+                            <li><a href="index.html">خانه</a></li>
                             <li><a href="#">ارتباط با ما</a></li>
-                            <li><a href="#">درباره ما</a></li>
+                            <li><a href="teachers.html">اساتید</a></li>
+                            <li><a href="aboutUs.html">درباره ما</a></li>
                             <li><a href="#">آکادمی</a></li>
-                            <li><a href="#">محصولات</a></li>
-                            <li><a href="#">وبلاگ</a></li>
+                            <li><a href="product.html">محصولات</a></li>
+                            <li><a href="blog.html">وبلاگ</a></li>
                             <li><a href="#">گالری</a></li>
                         </ul>
                     </div>
@@ -710,9 +811,6 @@
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-    <!-- Carousel -->
-    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <!-- For Search Box -->
     <script src="./js/extention/choices.js"></script>
     <script>

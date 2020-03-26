@@ -1,0 +1,82 @@
+
+
+.about-us {
+    margin-top: 30vh;
+
+    .our-goal {
+        text-align: center;
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+    }
+
+    .our-about {
+        text-align: center;
+        margin-top: 2em;
+        h2 {
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+        p {
+            padding: 1em 0;
+            line-height: 1.5em;
+        }
+    }
+
+    .founders {
+        text-align: center;
+        margin-top: 3em;
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+
+        .founders-intro {
+            img {
+                width: 128px;
+                height: 128px;
+                border-radius: 50%;
+            }
+            h3 {
+                font-size: 1.5em;
+                font-weight: 500;
+                margin-top: 1em;
+            }
+            h4 {
+                font-size: 1em;
+                color: #666565;
+                margin-top: .8em;
+            }
+            p {
+                padding: 1em 4em;
+                line-height: 1.5em;
+            }
+        }
+    }
+
+    .we-do {
+        margin-top: 2em;
+        padding: 2em 3em;
+        background: #2B001D;
+        color: #fff;
+        h2 {
+            font-size: 2em;
+            font-weight: 500;
+        }
+        .we-do-inn {
+            line-height: 2em;
+            padding-top: 2em;
+            
+            p {
+                margin-top: 1em;
+            }
+        }
+        
+    }
+}

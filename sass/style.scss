@@ -1,8 +1,13 @@
 @import "reset";
 @import "config";
+@import "family";
 @import "header";
+@import "_registerLogin";
 @import "product";
 @import "productPage";
+@import "blog-page";
+@import "teachers";
+@import "about";
 @import "counter";
 @import "swiper";
 @import "footer";
@@ -23,6 +28,10 @@ body {
     overflow-x: hidden;
     font-family: bYekan;
     // font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+a {
+    display: inline-block;
 }
 
 

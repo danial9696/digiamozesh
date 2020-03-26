@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teachers</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">     
+</head>
+<body style="background: #fff;">
+    
+
+    <!-- Desktop & Mobile Menu -->
+<header style="height: auto;">
+    <div id="sticky-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="logo">
+                        <img src="./assets/img/logo/logo.png" alt="Digiamozesh" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-7 d-none d-lg-block">
+                    <div class="main-menu">
+                        <nav>
+                            <ul class="ulMenu" id="navigation">     
+                                <li class="menu-item">
+                                    <a href="index.html" class="menu-link">
+                                        صفحه اصلی
+                                    </a>
+                                </li>
+                
+                                <div class="mega-menu">
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            دوره های حضوری
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="ul-mega-menu">
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">شبکه</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    <li><a href="#">مورد 6</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">امنیت</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    <li><a href="#">مورد 6</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">سیستم های عامل</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">مجازی سازی</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-link">برنامه نویسی</a>
+                                                <ul>
+                                                    <li><a href="#">مورد 1</a></li>
+                                                    <li><a href="#">مورد 2</a></li>
+                                                    <li><a href="#">مورد 3</a></li>
+                                                    <li><a href="#">مورد 4</a></li>
+                                                    <li><a href="#">مورد 5</a></li>
+                                                    <li><a href="#">مورد 6</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                </div>
+                                
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        ویدئو
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="blog.html" class="menu-link">
+                                        مقالات آموزشی
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        مشاوره
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        درباره ما
+                                    </a>
+                                </li>
+                
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        کسب و کار
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-md-2 col-lg-3 sign-part text-md-center">
+                    <div id="top-user-sign">
+                        <button class="sign-btn" id="sign-in-btn">ورود</button>
+                        <button class="sign-btn" id="sign-up-btn">ثبت نام</button>
+                    </div>
+                </div>
+                
+                </div>
+                
+        </div>
+
+
+            <!-- Mobile Menu -->
+        <div class="mobile-menu d-block d-lg-none">
+            <span id="collapseBtn"><i class="fa fa-bars fa-2x"></i></span>
+        
+            <div class="slick-menu">
+                
+                <ul class="ulMobile">     
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            صفحه اصلی
+                        </a>
+
+                    </li>
+                    <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                دوره های حضوری
+                            </a>
+                            <i class="fa fa-angle-down mobile-mega-menu"></i>
+                            <div class="mega-menu">
+                            <ul class="ul-mega-menu">
+                                <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            ویدئو
+                        </a>
+                        <i class="fa fa-angle-down mobile-mega-menu"></i>
+                            <div class="mega-menu">
+                            <ul class="ul-mega-menu">
+                                <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="blog.html" class="menu-link">
+                            مقالات آموزشی
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            مشاوره
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            درباره ما
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            کسب و کار
+                        </a>
+                    </li>
+                </ul>
+        
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- Register Popup -->
+<div class="register" id="registerPopup">
+<form action="" class="register-popup d-flex flex-column">
+    <h1 class="text-center">ثبت نام</h1>
+
+    <label for="email"><b>ایمیل:</b></label>
+    <input type="email" placeholder="" name="email">
+
+    <label for="mobile-num"><b>شماره همراه:</b></label>
+    <input type="tel" placeholder="" name="mobile-num">
+
+    <label for="psw"><b>رمز عبور:</b></label>
+    <input type="password" placeholder="" name="psw">
+
+    <label for="psw"><b>تایید رمز عبور:</b></label>
+    <input type="password" placeholder="" name="psw">
+
+    <button type="submit" class="btn btn-info">ثبت نام</button>
+    <button type="submit" class="btn btn-danger">ثبت نام با اکانت گوگل</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-close" id="close"></i></button>
+</form>
+</div>
+
+<!-- Login Popup -->
+<div class="login" id="loginPopup">
+<form action="" class="login-popup d-flex flex-column">
+    <h1 class="text-center">ورود</h1>
+
+    <label for="email"><b>ایمیل:</b></label>
+    <input type="email" placeholder="" name="email">
+
+    <label for="psw"><b>رمز عبور:</b></label>
+    <input type="password" placeholder="" name="psw">
+
+    <div class="login-detail">
+        <a href="#" class="text-danger">فراموشی رمز عبور</a>
+        <div class="">
+            <label for="remember">مرا به خاطر بسپار</label>
+            <input type="checkbox" value="remember" name="remember" checked>
+        </div>
+        
+    </div>
+
+    <button type="submit" class="btn btn-success">ورود</button>
+    <button type="submit" class="btn btn-danger">ورود با اکانت گوگل</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-close" id="close"></i></button>
+    
+</form>
+</div>
+
+<!-- OverLay For PopUp -->
+<div id="overlay"></div> 
+
+
+<section class="teacher-intro">
+    <h2>معرفی اساتید</h2>
+    
+    <div class="teacher-wrapper mt-3">
+
+        <div class="top-btn-description d-flex justify-content-around">           
+            <button class="btn web-teacher">وب</button>
+            <button class="btn network-teacher">شبکه</button>
+            <button class="btn">سیستم های عامل</button>
+            <button class="btn">مجازی سازی</button>
+            <button class="btn">امنیت</button>
+        </div>
+        <!--  -->
+        <div class="full-description py-4 px-5 web-teacher-inn">
+                
+                    <div class="container">
+                        <div class="row mt-5 teacher-description">
+                            <div class="col-md-4">
+                                <img src="./assets/img/teachers/musk.jpg" alt="elun musk">
+                                <h3>ایلان ماسک</h3>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 teacher-description flex-row-reverse">
+                            <div class="col-md-4">
+                                <img src="./assets/img/teachers/musk.jpg" alt="elun musk">
+                                <h3>ایلان ماسک</h3>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 teacher-description">
+                            <div class="col-md-4">
+                                <img src="./assets/img/teachers/musk.jpg" alt="elun musk">
+                                <h3>ایلان ماسک</h3>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 teacher-description flex-row-reverse">
+                            <div class="col-md-4">
+                                <img src="./assets/img/teachers/musk.jpg" alt="elun musk">
+                                <h3>ایلان ماسک</h3>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                            </div>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <div class="full-description py-4 px-5 network-teacher-inn">
+                
+            <div class="container">
+                <div class="row mt-5 teacher-description">
+                    <div class="col-md-4">
+                        <img src="./assets/img/teachers/musk.jpg" alt="elun musk">
+                        <h3>ایلان ماسک</h3>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                    </div>
+                </div>
+
+                <div class="row mt-5 teacher-description flex-row-reverse">
+                    <div class="col-md-4">
+                        <img src="./assets/img/teachers/musk.jpg" alt="elun musk">
+                        <h3>ایلان ماسک</h3>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+            
+    </div>
+</section>
+
+
+<div class="teacher-join mt-5 text-center">
+    <h1>دیجی آموزش</h1>
+    <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد 
+    </p>
+</div>
+
+<div class="teacher-join-btn text-center mt-5">
+    <h2>به دیجی آموزش بپیوندید</h2>
+    <h3>رو به رشد ترین آموزشگاه دیجیتال</h3>
+    <button class="btn btn-danger mt-3 px-5 py-2">ارسال رزومه</button>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<footer class="mt-5">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="address">
+                        <span>دیجی آموزش</span>
+                        <p>میدان ونک، خیابان ملاصدرا،<br> نرسیده به پل کردستان،<br> پلاک 52</p>
+                        <p>021-88888888</p>
+                        <p>Digiamozesh@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="links">
+                        <span>لینک ها</span>
+                        <ul class="d-flex flex-column">
+                            <li><a href="index.html">خانه</a></li>
+                            <li><a href="#">ارتباط با ما</a></li>
+                            <li><a href="teachers.html">اساتید</a></li>
+                            <li><a href="aboutUs.html">درباره ما</a></li>
+                            <li><a href="#">آکادمی</a></li>
+                            <li><a href="product.html">محصولات</a></li>
+                            <li><a href="blog.html">وبلاگ</a></li>
+                            <li><a href="#">گالری</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-sign">
+                        <span>ثبت نام</span>
+                        <form id="search-form" class="form-search d-flex">
+                            <input type="text" class="input-search" placeholder="ایمیل">
+                            <button type="submit" class="btn btn-success mr-2">ثبت نام</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-social">
+                        <span>شبکه های اجتماعی</span>
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="https://www.instagram.com/digiamozesh/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/video.js/dist/video.min.js"></script>
+    <script src="./node_modules/swiper/js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

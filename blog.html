@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">     
+</head>
+<body>
+    
+<!-- Desktop & Mobile Menu -->
+<header style="height: auto;">
+        <div id="sticky-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+    
+                    <div class="col-md-4 col-lg-2">
+                        <div class="logo">
+                            <img src="./assets/img/logo/logo.png" alt="Digiamozesh" class="img-fluid">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-7 d-none d-lg-block">
+                        <div class="main-menu">
+                            <nav>
+                                <ul class="ulMenu" id="navigation">     
+                                    <li class="menu-item">
+                                        <a href="index.html" class="menu-link">
+                                            صفحه اصلی
+                                        </a>
+                                    </li>
+                    
+                                    <div class="mega-menu">
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">
+                                                دوره های حضوری
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="ul-mega-menu">
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-link">شبکه</a>
+                                                    <ul>
+                                                        <li><a href="#">مورد 1</a></li>
+                                                        <li><a href="#">مورد 2</a></li>
+                                                        <li><a href="#">مورد 3</a></li>
+                                                        <li><a href="#">مورد 4</a></li>
+                                                        <li><a href="#">مورد 5</a></li>
+                                                        <li><a href="#">مورد 6</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-link">امنیت</a>
+                                                    <ul>
+                                                        <li><a href="#">مورد 1</a></li>
+                                                        <li><a href="#">مورد 2</a></li>
+                                                        <li><a href="#">مورد 3</a></li>
+                                                        <li><a href="#">مورد 4</a></li>
+                                                        <li><a href="#">مورد 5</a></li>
+                                                        <li><a href="#">مورد 6</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-link">سیستم های عامل</a>
+                                                    <ul>
+                                                        <li><a href="#">مورد 1</a></li>
+                                                        <li><a href="#">مورد 2</a></li>
+                                                        <li><a href="#">مورد 3</a></li>
+                                                        <li><a href="#">مورد 4</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-link">مجازی سازی</a>
+                                                    <ul>
+                                                        <li><a href="#">مورد 1</a></li>
+                                                        <li><a href="#">مورد 2</a></li>
+                                                        <li><a href="#">مورد 3</a></li>
+                                                        <li><a href="#">مورد 4</a></li>
+                                                        <li><a href="#">مورد 5</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-link">برنامه نویسی</a>
+                                                    <ul>
+                                                        <li><a href="#">مورد 1</a></li>
+                                                        <li><a href="#">مورد 2</a></li>
+                                                        <li><a href="#">مورد 3</a></li>
+                                                        <li><a href="#">مورد 4</a></li>
+                                                        <li><a href="#">مورد 5</a></li>
+                                                        <li><a href="#">مورد 6</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </div>
+                                    
+                    
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            ویدئو
+                                        </a>
+                                    </li>
+                    
+                                    <li class="menu-item">
+                                        <a href="blog.html" class="menu-link">
+                                            مقالات آموزشی
+                                        </a>
+                                    </li>
+                    
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            مشاوره
+                                        </a>
+                                    </li>
+                    
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            درباره ما
+                                        </a>
+                                    </li>
+                    
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">
+                                            کسب و کار
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-2 col-lg-3 sign-part text-md-center">
+                        <div id="top-user-sign">
+                            <button class="sign-btn" id="sign-in-btn">ورود</button>
+                            <button class="sign-btn" id="sign-up-btn">ثبت نام</button>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+            </div>
+    
+    
+                <!-- Mobile Menu -->
+            <div class="mobile-menu d-block d-lg-none">
+                <span id="collapseBtn"><i class="fa fa-bars fa-2x"></i></span>
+            
+                <div class="slick-menu">
+                    
+                    <ul class="ulMobile">     
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                صفحه اصلی
+                            </a>
+    
+                        </li>
+                        <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    دوره های حضوری
+                                </a>
+                                <i class="fa fa-angle-down mobile-mega-menu"></i>
+                                <div class="mega-menu">
+                                <ul class="ul-mega-menu">
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        
+        
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                ویدئو
+                            </a>
+                            <i class="fa fa-angle-down mobile-mega-menu"></i>
+                                <div class="mega-menu">
+                                <ul class="ul-mega-menu">
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">شبکه</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">امنیت</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">سیستم های عامل</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">مجازی سازی</a></li>
+                                    <li class="mega-menu-item"><a href="#" class="mega-link">برنامه نویسی</a></li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                        <li class="menu-item">
+                            <a href="blog.html" class="menu-link">
+                                مقالات آموزشی
+                            </a>
+                        </li>
+        
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                مشاوره
+                            </a>
+                        </li>
+        
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                درباره ما
+                            </a>
+                        </li>
+        
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                کسب و کار
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+            </div>
+    
+        </div>
+</header>
+
+<!-- Register Popup -->
+<div class="register" id="registerPopup">
+    <form action="" class="register-popup d-flex flex-column">
+        <h1 class="text-center">ثبت نام</h1>
+    
+        <label for="email"><b>ایمیل:</b></label>
+        <input type="email" placeholder="" name="email">
+    
+        <label for="mobile-num"><b>شماره همراه:</b></label>
+        <input type="tel" placeholder="" name="mobile-num">
+
+        <label for="psw"><b>رمز عبور:</b></label>
+        <input type="password" placeholder="" name="psw">
+
+        <label for="psw"><b>تایید رمز عبور:</b></label>
+        <input type="password" placeholder="" name="psw">
+    
+        <button type="submit" class="btn btn-info">ثبت نام</button>
+        <button type="submit" class="btn btn-danger">ثبت نام با اکانت گوگل</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-close" id="close"></i></button>
+    </form>
+</div>
+
+<!-- Login Popup -->
+<div class="login" id="loginPopup">
+    <form action="" class="login-popup d-flex flex-column">
+        <h1 class="text-center">ورود</h1>
+    
+        <label for="email"><b>ایمیل:</b></label>
+        <input type="email" placeholder="" name="email">
+    
+        <label for="psw"><b>رمز عبور:</b></label>
+        <input type="password" placeholder="" name="psw">
+
+        <div class="login-detail">
+            <a href="#" class="text-danger">فراموشی رمز عبور</a>
+            <div class="">
+                <label for="remember">مرا به خاطر بسپار</label>
+                <input type="checkbox" value="remember" name="remember" checked>
+            </div>
+            
+        </div>
+    
+        <button type="submit" class="btn btn-success">ورود</button>
+        <button type="submit" class="btn btn-danger">ورود با اکانت گوگل</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-close" id="close"></i></button>
+        
+    </form>
+</div>
+
+<!-- OverLay For PopUp -->
+<div id="overlay"></div> 
+
+<!-- Main Blog -->
+<section class="container-fluid blog-page">
+    <div class="blog-header p-3">
+        <h2>نکات آموزشی برنامه نویسی Asynchronous</h2>
+        <div class="top-breadcrumb" aria-label="breadcrumb">
+            <ul class="my-top-breadcrumb">
+                <li class="top-breadcrumb-item"><a href="index.html">خانه</a></li>
+                <li class="top-breadcrumb-item"><a href="#">مقالات آموزشی</a></li>
+                <li class="top-breadcrumb-item"><a href="#">دسته بندی</a></li>
+                <li class="top-breadcrumb-item"><a href="#">JS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-3 blog-main-img">
+        <div class="col blog-img mx-5">
+            <img src="./assets/img/featured_socialmedia.jpg" class="img-fluid" alt="featured_socialmedia">
+
+            <div class="img-sticker">
+
+                <div class="img-sticker-inn">
+
+                    <a href="#" class="top-sticker">JS & jquery</a>
+                    <div class="single-title">
+                        <h1 class="single-title-inn">5 نکته مهم در مورد تفاوت برنامه نویسی همگام و نا همگام</h1>
+                    </div>
+                    <div class="profile-info">
+                        <a href="#"><img src="./assets/img/teachers/musk.jpg" alt="Elon Musk"></a>
+                        <a href="#" class="authore">ایلان ماسک</a>
+                        <span>تاریخ انتشار</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row blog-description mt-3 bg-white">
+        <div class="col-md-2">
+            <aside>
+
+            </aside>
+        </div>
+
+        <div class="col-md-8">
+            <main class="blog-main-text p-4">
+                <p class="blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                <h1>تیتر شماره 1 </h1>
+                <p class="blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                <p class="blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                    <div class="product-video">
+                    <video id="my-video"
+                class="video-js vjs-big-play-centered vjs-16-9 w-100"
+                controls
+                preload="auto"
+                height="264"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}" >
+                <source src="./assets/video/charles.mp4" type="video/mp4">
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                    >
+                </p>
+                    </video>
+                    </div>
+                <p class="blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            
+            </main>
+        </div>
+
+        <div class="col-md-2">
+            <aside class="share-blog p-4">
+                    <span><a href="#"><i class="fa fa-telegram fa-3x"></i></a></span>
+                    <span><a href="#"><i class="fa fa-instagram fa-3x"></i></a></span>
+                    <span><a href="#"><i class="fa fa-comment fa-2x"></i></a></span>
+                    <span><a href="#"><i class="fa fa-print fa-2x"></i></a></span>
+                    <span><a href="#"><i class="fa fa-envelope fa-2x"></i></a></span>
+            </aside>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<footer class="mt-5">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="address">
+                        <span>دیجی آموزش</span>
+                        <p>میدان ونک، خیابان ملاصدرا،<br> نرسیده به پل کردستان،<br> پلاک 52</p>
+                        <p>021-88888888</p>
+                        <p>Digiamozesh@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="links">
+                        <span>لینک ها</span>
+                        <ul class="d-flex flex-column">
+                            <li><a href="index.html">خانه</a></li>
+                            <li><a href="#">ارتباط با ما</a></li>
+                            <li><a href="teachers.html">اساتید</a></li>
+                            <li><a href="aboutUs.html">درباره ما</a></li>
+                            <li><a href="#">آکادمی</a></li>
+                            <li><a href="product.html">محصولات</a></li>
+                            <li><a href="blog.html">وبلاگ</a></li>
+                            <li><a href="#">گالری</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-sign">
+                        <span>ثبت نام</span>
+                        <form id="search-form" class="form-search d-flex">
+                            <input type="text" class="input-search" placeholder="ایمیل">
+                            <button type="submit" class="btn btn-success mr-2">ثبت نام</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-social">
+                        <span>شبکه های اجتماعی</span>
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="https://www.instagram.com/digiamozesh/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/video.js/dist/video.min.js"></script>
+<script src="./node_modules/swiper/js/swiper.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
